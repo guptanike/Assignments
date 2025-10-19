@@ -1,10 +1,5 @@
+#include<math.h>
 #include"mylib.h"
-int reverseDigits(int num)
-{
-    int rev=0;
-    rev=rev*10+num%10;
-    return rev;
-}
 int isArmstrong(int num)
 {
     int temp=num,digits=0,sum=0;
@@ -30,6 +25,12 @@ int isArmstrong(int num)
     {
         return 0;
     }
+}
+int reverseDigits(int num)
+{
+    int rev=0;
+    rev=rev*10+num%10;
+    return rev;
 }
 int isAdams(int num)
 {
